@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/streetsrussia/static/css/main.033be41d.css",
-    "main.js": "/streetsrussia/static/js/main.5e1d038e.js",
-    "static/js/453.039ccdd4.chunk.js": "/streetsrussia/static/js/453.039ccdd4.chunk.js",
-    "index.html": "/streetsrussia/index.html",
-    "main.033be41d.css.map": "/streetsrussia/static/css/main.033be41d.css.map",
-    "main.5e1d038e.js.map": "/streetsrussia/static/js/main.5e1d038e.js.map",
-    "453.039ccdd4.chunk.js.map": "/streetsrussia/static/js/453.039ccdd4.chunk.js.map"
+    "main.css": "/StreetsRussia_Frontend/static/css/main.033be41d.css",
+    "main.js": "/StreetsRussia_Frontend/static/js/main.65d5e8a1.js",
+    "static/js/453.039ccdd4.chunk.js": "/StreetsRussia_Frontend/static/js/453.039ccdd4.chunk.js",
+    "index.html": "/StreetsRussia_Frontend/index.html",
+    "main.033be41d.css.map": "/StreetsRussia_Frontend/static/css/main.033be41d.css.map",
+    "main.65d5e8a1.js.map": "/StreetsRussia_Frontend/static/js/main.65d5e8a1.js.map",
+    "453.039ccdd4.chunk.js.map": "/StreetsRussia_Frontend/static/js/453.039ccdd4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.033be41d.css",
-    "static/js/main.5e1d038e.js"
+    "static/js/main.65d5e8a1.js"
   ]
 }
