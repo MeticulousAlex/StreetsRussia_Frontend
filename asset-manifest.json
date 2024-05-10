@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.033be41d.css",
-    "main.js": "/static/js/main.650fcfd6.js",
-    "static/js/453.039ccdd4.chunk.js": "/static/js/453.039ccdd4.chunk.js",
-    "index.html": "/index.html",
-    "main.033be41d.css.map": "/static/css/main.033be41d.css.map",
-    "main.650fcfd6.js.map": "/static/js/main.650fcfd6.js.map",
-    "453.039ccdd4.chunk.js.map": "/static/js/453.039ccdd4.chunk.js.map"
+    "main.css": "/streetsrussia/static/css/main.033be41d.css",
+    "main.js": "/streetsrussia/static/js/main.5e1d038e.js",
+    "static/js/453.039ccdd4.chunk.js": "/streetsrussia/static/js/453.039ccdd4.chunk.js",
+    "index.html": "/streetsrussia/index.html",
+    "main.033be41d.css.map": "/streetsrussia/static/css/main.033be41d.css.map",
+    "main.5e1d038e.js.map": "/streetsrussia/static/js/main.5e1d038e.js.map",
+    "453.039ccdd4.chunk.js.map": "/streetsrussia/static/js/453.039ccdd4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.033be41d.css",
-    "static/js/main.650fcfd6.js"
+    "static/js/main.5e1d038e.js"
   ]
 }
