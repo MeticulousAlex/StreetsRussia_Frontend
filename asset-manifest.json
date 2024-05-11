@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/StreetsRussia_Frontend/static/css/main.00c77969.css",
-    "main.js": "/StreetsRussia_Frontend/static/js/main.1f15d796.js",
+    "main.css": "/StreetsRussia_Frontend/static/css/main.63e36acb.css",
+    "main.js": "/StreetsRussia_Frontend/static/js/main.ac46e006.js",
     "static/js/453.039ccdd4.chunk.js": "/StreetsRussia_Frontend/static/js/453.039ccdd4.chunk.js",
     "static/media/Promo_video.mp4": "/StreetsRussia_Frontend/static/media/Promo_video.f3b09438f64d4572083d.mp4",
+    "static/media/logo_black.svg": "/StreetsRussia_Frontend/static/media/logo_black.b9e1635fd6d1636aaec12167f3b75258.svg",
     "index.html": "/StreetsRussia_Frontend/index.html",
-    "main.00c77969.css.map": "/StreetsRussia_Frontend/static/css/main.00c77969.css.map",
-    "main.1f15d796.js.map": "/StreetsRussia_Frontend/static/js/main.1f15d796.js.map",
+    "main.63e36acb.css.map": "/StreetsRussia_Frontend/static/css/main.63e36acb.css.map",
+    "main.ac46e006.js.map": "/StreetsRussia_Frontend/static/js/main.ac46e006.js.map",
     "453.039ccdd4.chunk.js.map": "/StreetsRussia_Frontend/static/js/453.039ccdd4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.00c77969.css",
-    "static/js/main.1f15d796.js"
+    "static/css/main.63e36acb.css",
+    "static/js/main.ac46e006.js"
   ]
 }
