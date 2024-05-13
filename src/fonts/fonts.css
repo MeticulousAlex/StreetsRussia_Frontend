@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Benzin';
+    src: url('./Benzin-Bold.woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Benzin';
+    src: url('./Benzin-Medium.woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('./Bahnschrift.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('./Bahnschrift.woff2');
+    font-weight: 700;
+}
