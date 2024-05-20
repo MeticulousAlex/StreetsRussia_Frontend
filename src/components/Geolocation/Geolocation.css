@@ -1,0 +1,43 @@
+.geolocation{
+    position: relative;
+}
+
+.geolocation__button{
+    display:flex;
+    gap:9px;
+    fill:#FFFFFF;
+    color:#FFFFFF;
+}
+
+.geolocation__button:hover{
+    fill:#B73A34;
+    color:#B73A34;
+}
+
+.geolocation__place-icon{
+    width:16px;
+    cursor:pointer;
+    fill:inherit;
+    pointer-events: auto;
+}
+
+.geolocation__place-name{
+    font-family: 'Bahnschrift',serif;
+    color:inherit;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    cursor:pointer;
+    border:none;
+    background:none;
+    padding:0;
+    margin:0;
+    transition: color linear 0.1s;
+    pointer-events: auto;
+}
+
+.geolocation__place-icon path{
+    fill:inherit;
+    transition: fill linear 0.1s;
+}

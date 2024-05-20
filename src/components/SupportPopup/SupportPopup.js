@@ -2,7 +2,7 @@ import React from "react";
 import "./SupportPopup.css";
 import Popup from "../Popup/Popup";
 
-export default function SupportPopup({isSupportOpen, setIsSupportOpen}){
+export default function SupportPopup({isSupportPopupOpen, setIsSupportPopupOpen}){
 
     const [amount, setAmount] = React.useState('');
     const [email, setEmail] = React.useState('');
@@ -28,7 +28,7 @@ export default function SupportPopup({isSupportOpen, setIsSupportOpen}){
 
     function handleSubmit(e){
         e.preventDefault();
-        setIsSupportOpen(false);
+        setIsSupportPopupOpen(false);
     }
 
     function revealField(e){
@@ -39,9 +39,9 @@ export default function SupportPopup({isSupportOpen, setIsSupportOpen}){
         }
     }
 
-    if (isSupportOpen){
+    if (isSupportPopupOpen){
         return(
-        <Popup isPopupOpen={setIsSupportOpen}>
+        <Popup isPopupOpen={setIsSupportPopupOpen} type='support'>
             <div className="popup__amount-grid" onClick={revealField}>
                 <input className="popup__amount-button" id="500" type="radio" name='amount' defaultChecked/>
                 <label className="popup__amount-label" for="500">500 ₽</label>

@@ -1,16 +1,29 @@
 .header{
-    position: fixed;
     width:100%;
+    height:84px;
     display:flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
-    background-color: #D9D9D9;
+    background-color: #222222;
     border-bottom:1px solid black;
+    padding:0 64px;
+    box-sizing: border-box;
+}
+
+.header__menus{
+  display:flex;
+  align-items: center;
+  gap:49px;
 }
 
 .header__logo{
-    max-width:327px;
+  position: absolute;
+  max-width:327px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* .header__navigation{
@@ -20,23 +33,34 @@
 
 .header__buttons{
   display:flex;
-  gap:49px;
-  padding-right:37px;
+  gap:24px;
+}
+
+.header__button{
+  padding:12px 18px;
+  color:black;
+  border:none;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: "Bahnschrift";
+  font-weight: 400;
+  font-variation-settings: "wdth" 100;
+  cursor: pointer;
+  transition: opacity linear 0.1s, border-color linear 0.1s;
+}
+
+.header__button:hover{
+  opacity:0.8;
+  border-color: rgba(0,0,0,0.5);
 }
 
 .header__button_support{
-    padding:12px 20px;
-    color:black;
-    border:1px solid black;
-    background-color: transparent;
-    font-size: 16px;
-    cursor: pointer;
-    transition: opacity linear 0.1s, border-color linear 0.1s;
+  background-color: #FFFFFF;
 }
 
-.header__button_support:hover{
-  opacity:0.8;
-  border-color: rgba(0,0,0,0.5);
+.header__button_join{
+  background-color:#B73A34;
+  color:white;
 }
 
 /* ------- Menu -------- */
@@ -65,7 +89,7 @@
     display: block;
     width: 28px;
     height: 3px;
-    background: black;
+    background: #FFFFFF;
     transition: .3s;
   }
   

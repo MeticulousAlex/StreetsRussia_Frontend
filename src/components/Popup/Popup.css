@@ -22,31 +22,61 @@
     max-width: 900px;
 }
 
+.popup__container_cities{
+    max-width: 322px;
+}
+
 .popup__content {
     display: flex;
+    flex-direction: column;
+    gap:20px;
     box-sizing: border-box;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
-    padding: 106px 50px 50px;
+    padding: 36px;
     flex-direction: column;
     width: 100%;
-    min-height: 160px;
+    min-height: 484px;
     background-color:#D9D9D9;;
 }
 
 .popup__button_type_cancel {
     position: absolute;
-    left: 40px;
-    top: 40px;
-    padding: 16px;
+    right: 12px;
+    top: 12px;
+    width:24px;
+    height:24px;
     border: none;
     background: none;
-    background-image: url('../images/cancel_button.svg');
+    background-image: url('../../images/cancel_is_your_city.svg');
     background-size: contain;
     cursor:pointer;
+    opacity:0.6;
   }
 
   .popup__button_type_cancel:hover{
-    opacity:0.8;
+    opacity:0.4;
   }
   
+
+.popup__title{
+    margin:0;
+    font-family: 'Bahnschrift',serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: #262626;
+    text-align: left;
+}
+
+.popup__title-caption{
+    margin:4px 0 0 0 ;
+    font-family: 'Bahnschrift', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color:#222222;
+    text-align: left;
+}
   
