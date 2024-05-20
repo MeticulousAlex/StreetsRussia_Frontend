@@ -31,7 +31,7 @@ function App() {
 
   // Geolocation
 
-  const [city, setCity] = React.useState(localStorage.getItem('currentCity') || 'Москва');
+  const [city, setCity] = React.useState(localStorage.getItem('currentCity') || '');
   const [isNotificationShown, setIsNotificationShown] = React.useState(true);
 
   // ----------------- FUNCTIONS ---------------------

@@ -6,19 +6,19 @@ import searchIcon from '../../images/search-icon.svg';
 
 export default function CititesPopup({isCitiesPopupOpen, setIsCitiesPopupOpen, city, setCity}){
 
-    const [currentCity, setCurrentCity] = React.useState(city);
+    const [currentCityName, setCurrentCityName] = React.useState(city);
     const [searchCity, setSearchCity] = React.useState('');
     const [citiesList, setCitiesList] = React.useState([]);
 
     function confirmCity(e){
-        const currentCity = document.querySelector('.city__container_chosen');
-        const newCity = e.target.parentNode;
+        const currentCityNode = document.querySelector('.city__container_chosen');
+        const newCityNode = e.target.parentNode;
 
-        currentCity.classList.remove('city__container_chosen');
-        newCity.classList.add('city__container_chosen');
+        currentCityNode.classList.remove('city__container_chosen');
+        newCityNode.classList.add('city__container_chosen');
         
         localStorage.setItem('currentCity',e.target.textContent);
-        setCurrentCity(e.target.textContent);
+        setCurrentCityName(e.target.textContent);
         setCity(e.target.textContent);
     }
 
@@ -28,17 +28,17 @@ export default function CititesPopup({isCitiesPopupOpen, setIsCitiesPopupOpen, c
 
     function CitiesRender(){
         let citiesDOMList = availableCities.map((city)=>{
-            if (city === currentCity && city.toLocaleLowerCase().includes(searchCity.toLocaleLowerCase())){
+            if (city.name === currentCityName && city.name.toLocaleLowerCase().includes(searchCity.toLocaleLowerCase())){
                return(
                 <div className='city__container city__container_chosen'>
-                    <p className='city__name'>{city}</p>
+                    <p className='city__name'>{city.name}</p>
                     <div className='city__indicator'/>
                 </div>
                 )
-            } else if (city.toLocaleLowerCase().includes(searchCity.toLocaleLowerCase())){
+            } else if (city.name.toLocaleLowerCase().includes(searchCity.toLocaleLowerCase())){
                return(
                 <li className='city__container'>
-                    <p className='city__name' onClick={confirmCity}>{city}</p>
+                    <p className='city__name' onClick={confirmCity}>{city.name}</p>
                     <div className='city__indicator'/>
                 </li>
                 ) 
@@ -49,7 +49,7 @@ export default function CititesPopup({isCitiesPopupOpen, setIsCitiesPopupOpen, c
 
     React.useEffect(()=>{
         CitiesRender();
-    },[currentCity, searchCity])
+    },[searchCity, city])
 
     if (isCitiesPopupOpen){
         return(
