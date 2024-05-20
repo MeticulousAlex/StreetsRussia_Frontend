@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/StreetsRussia_Frontend/static/css/main.ff4bc942.css",
-    "main.js": "/StreetsRussia_Frontend/static/js/main.6ea48842.js",
+    "main.js": "/StreetsRussia_Frontend/static/js/main.0a58b18f.js",
     "static/js/453.039ccdd4.chunk.js": "/StreetsRussia_Frontend/static/js/453.039ccdd4.chunk.js",
     "static/media/Promo_video.mp4": "/StreetsRussia_Frontend/static/media/Promo_video.f3b09438f64d4572083d.mp4",
     "static/media/BAHNSCHRIFT.TTF": "/StreetsRussia_Frontend/static/media/BAHNSCHRIFT.b00e12e37c52124aa504.TTF",
@@ -9,16 +9,15 @@
     "static/media/Benzin-Medium.woff2": "/StreetsRussia_Frontend/static/media/Benzin-Medium.c6bb4354f4779adb217a.woff2",
     "static/media/logo_white_vector.svg": "/StreetsRussia_Frontend/static/media/logo_white_vector.560f3cc258703650dc860eca714ee7e5.svg",
     "static/media/indicator_chosen.svg": "/StreetsRussia_Frontend/static/media/indicator_chosen.f1c42f8904f0f3e62676.svg",
-    "static/media/geolocation-icon.svg": "/StreetsRussia_Frontend/static/media/geolocation-icon.ed7e72329e73d61d5919d85ae618bb75.svg",
     "static/media/search-icon.svg": "/StreetsRussia_Frontend/static/media/search-icon.ee988e760a7d5ec78410c15e1b46ced2.svg",
     "index.html": "/StreetsRussia_Frontend/index.html",
-    "static/media/cancel_is_your_city.svg": "/StreetsRussia_Frontend/static/media/cancel_is_your_city.36eacae1943a2814d5e21d2e8024a18b.svg",
+    "static/media/cancel_is_your_city.svg": "/StreetsRussia_Frontend/static/media/cancel_is_your_city.36eacae1943a2814d5e2.svg",
     "main.ff4bc942.css.map": "/StreetsRussia_Frontend/static/css/main.ff4bc942.css.map",
-    "main.6ea48842.js.map": "/StreetsRussia_Frontend/static/js/main.6ea48842.js.map",
+    "main.0a58b18f.js.map": "/StreetsRussia_Frontend/static/js/main.0a58b18f.js.map",
     "453.039ccdd4.chunk.js.map": "/StreetsRussia_Frontend/static/js/453.039ccdd4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ff4bc942.css",
-    "static/js/main.6ea48842.js"
+    "static/js/main.0a58b18f.js"
   ]
 }
