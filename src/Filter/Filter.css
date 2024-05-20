@@ -1,0 +1,20 @@
+.filter__option-box {
+  background-color: #D9D9D9;
+  border: 1px solid #000;
+  appearance: none;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 120.5%;
+  width: 100%;
+  padding: 20px 16px;
+  height: 60px;
+}
+
+.filter__option-box:focus {
+  outline: none;
+}
+
+.filter__option {
+  text-transform: uppercase;
+}

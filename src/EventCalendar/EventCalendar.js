@@ -3,16 +3,18 @@ import Calendar from 'color-calendar';
 import 'color-calendar/dist/css/theme-basic.css';
 import 'color-calendar/dist/css/theme-glass.css'; 
 import { useEffect } from 'react';
-import { EVENTS } from '../constants/events';
 
-export default function EventCalendar() {
+export default function EventCalendar({dayEvents, onDateClick, onShowEvents}) {
 
   useEffect(() => {
     new Calendar({
       id: '#color-calendar',
-      eventsData: EVENTS,
-      dateChanged: (currentDate, events) => {
-        events.map((ev) => console.log(ev.name))
+      theme: "glass",
+      primaryColor: '#222',
+      eventsData: dayEvents,
+      selectedDateClicked: (currentDate, events) => {
+        onDateClick();
+        onShowEvents(events);
 },
       monthChanged: (currentDate, DateEvents) => {
         console.log('it works');

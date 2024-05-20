@@ -1,17 +1,42 @@
 import './Events.css';
-import Filter from '../Filter/Filter';
 import EventCalendar from '../EventCalendar/EventCalendar';
-import {REGIONS} from '../constants/regions';
+import EventPopup from '../EventPopup/EventPopup';
+import { EVENTS } from '../constants/events';
+import { DISCIPLINE} from '../constants/discipline';
+import { useEffect, useState } from 'react';
+
 
 export default function Events() {
+
+  const [isEventOpen, setIsEventOpen] = useState(false);
+  const [currentEvents, setCurrentEvents] = useState([]);
+
+  function handleEventOpen() {
+    setIsEventOpen(true);
+  }
+
+  function handleShowEvents(events) {
+    setCurrentEvents(events);
+  }
+
+  useEffect(() => {
+    setCurrentEvents(EVENTS);
+  }, [])
   
   return(
     <section className='events'>
-        <Filter 
-          ops={REGIONS}
-          param = 'регион'
+        <EventCalendar
+          dayEvents={EVENTS}
+          onDateClick={handleEventOpen}
+          onShowEvents={handleShowEvents}
         />
-        <EventCalendar/>
+        <EventPopup 
+          isEventOpen={isEventOpen} 
+          setIsEventOpen={setIsEventOpen} 
+          events={currentEvents} 
+          discipline={DISCIPLINE}
+          setCurrentEvents={setCurrentEvents}
+        />
     </section>
   )
 }

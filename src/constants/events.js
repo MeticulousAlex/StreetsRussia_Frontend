@@ -10,7 +10,7 @@ export const EVENTS = [
     start: '2024-05-15T06:00:00',
     end: '2024-05-15T06:00:00',
     name: 'Event 2',
-    discipline: 'graff',
+    discipline: 'bmx',
     region: 'Reg 12',
     city: 'City13'
   },{
@@ -20,5 +20,12 @@ export const EVENTS = [
     discipline: 'fdfdfd',
     region: 'Reg 4',
     city: 'City14'
-  },
+  },{
+    start: '2024-05-15',
+    end: '2024-05-16',
+    name: 'Event 32',
+    discipline: 'graff',
+    region: 'Reg 5',
+    city: 'City13'
+  }
 ]

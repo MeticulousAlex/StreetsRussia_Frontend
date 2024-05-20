@@ -1,0 +1,125 @@
+.popup__amount-grid{
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr 3fr;
+    gap:15px;
+}
+
+.popup__amount-button{
+    display:none;
+}
+
+.popup__amount-button:checked + .popup__amount-label{
+    color:white;
+    background-color: black;
+}
+
+
+.popup__amount-label{
+    border:none;
+    color:black;
+    background-color: #D9D9D9;
+    border:1px solid black;
+    padding: 28px 0;
+    font-size: 22px;
+    line-height: 1.2;
+    font-family: 'Benzin', serif;
+    font-weight: 500;
+    cursor:pointer;
+}
+
+.popup__amount-button:checked + .popup__amount-label:hover{
+    opacity:1;
+}
+
+.popup__amount-label:hover{
+    opacity:0.8;
+}
+
+.popup__form{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    gap:20px;
+    padding:20px 0 0 0;
+}
+
+.popup__form-field{
+    display:block;
+    width:100%;
+}
+
+.popup__form-field_hidden{
+    display:none;
+}
+
+.popup__input{
+    border:none;
+    border:1px solid black;
+    width:100%;
+    padding:25px 30px;
+    font-size: 22px;
+    font-weight: 500;
+    box-sizing:border-box;
+    background-color: #D9D9D9;
+}
+
+.popup__agreement{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.popup__agreement-button{
+    display:none;
+}
+
+.popup__agreement-button:checked + .popup__agreement-label:before{
+    content: " ";
+    position: absolute;
+    z-index: 21;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background-color: black;
+}
+
+.popup__agreement-label{
+    position: relative;
+    width:36px;
+    height:36px;
+    border:1px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.popup__agreement-title{
+    font-size: 22px;
+    margin:0;
+}
+
+.popup__agreement-title_offer{
+    text-decoration: none;
+    color: black;
+    border-bottom:1px solid black;
+    transition: opacity linear 0.1s;
+}
+
+.popup__agreement-title_offer:hover{
+   opacity:0.6;
+}
+
+.popup__button_submit{
+    color:white;
+    background-color: black;
+    font-size: 18px;
+    height:60px;
+    padding:0 22px;
+    align-self:baseline;
+    border:none;
+    cursor: pointer;
+}
+
+.popup__button_submit:hover{
+ opacity:0.7;
+}

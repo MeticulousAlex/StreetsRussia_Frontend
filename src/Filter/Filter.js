@@ -1,20 +1,19 @@
+import { useState } from 'react';
 import './Filter.css';
 
-export default function Filter({ops, param}) {
-
-  console.log(param);
-  console.log(ops);
- 
-  function handleChange(e) {
-    console.log(e.target.value);
+export default function Filter({ops, param, filterDiscipline, setFilterDiscipline, onFilter}) {
+  
+  function getValue(e) {
+    setFilterDiscipline(e.state.value);
+    onFilter(filterDiscipline);
   }
 
   return(
     <form className='filter' name='filter'>
-      <select onChange={handleChange}>
-        <option>Выберите {param}</option>
+      <select className='filter__option-box' onChange={getValue}>
+        <option className='filter__option'>{param}</option>
         {ops.map((op) => 
-          (<option>{op}</option>)
+          (<option className='filter__option' key={op.id} value={op.id}>{op.title}</option>)
         )}
       </select>
     </form>
