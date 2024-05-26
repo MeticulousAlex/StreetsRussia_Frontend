@@ -1,0 +1,90 @@
+.about {
+  background-color: #222;
+  background-image: url('../../images/background.png');
+  background-size: cover;
+  padding: 64px 65px 76px;
+  color: #fff;
+}
+
+.about__title {
+  margin: 0;
+  font-family: 'Benzin', serif;
+  color: #B73A34;
+  text-align: left;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+       
+.about__info {
+  padding: 24px 0 40px;
+  display: grid;
+  grid-template: repeat(2, 1fr)/ repeat(auto-fit, 1fr);
+  gap: 20px;
+}
+
+.about__text {
+  margin: 0;
+  font-family: 'Bahnschrift', serif;
+  text-align: left;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.about__text_type_main {
+  grid-column: 1/3;
+}
+
+.about__video {
+  max-width: 756px;
+  max-height: 470px;
+}
+
+.about_mission, .about__target {
+  border-bottom: 2px solid var(--bg-text-dark, #222);
+}
+
+.about_mission {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about__subtitle, .about__mission-text {
+  margin: 0;
+  font-family: 'Bahnschrift', serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.about__subtitle {
+  text-align: left;
+  color:#B73A34;
+}
+
+.about__target {
+  padding: 64px 0 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.about__subtitle_block_target {
+  justify-self: start;
+  align-self: center;
+}
+
+.about__history {
+  padding: 40px 0;
+}
+
+.about__partners {
+  padding: 118px 0 64px;
+}

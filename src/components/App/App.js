@@ -4,6 +4,8 @@ import React from 'react';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import AuthPage from '../AuthPage/AuthPage';
+import About from '../About/About';
+import Calendar from '../Calendar/Calendar';
 import CititesPopup from '../CitiesPopup/CititesPopup';
 import { Route, Routes, useNavigate} from 'react-router-dom';
 import { register, authorize } from '../../utils/MainApi';
@@ -83,9 +85,9 @@ function App() {
       <Header setIsSupportPopupOpen={setIsSupportPopupOpen} setIsJoinPopupOpen={setIsJoinPopupOpen} city={city} setCity={setCity} isNotificationShown={isNotificationShown} setIsNotificationShown={setIsNotificationShown} setIsCitiesPopupOpen={setIsCitiesPopupOpen}/>
       <Routes>
         <Route path='/' element={<Main isJoinPopupOpen={isJoinPopupOpen} setIsJoinPopupOpen={setIsJoinPopupOpen} isSupportPopupOpen={isSupportPopupOpen} setIsSupportPopupOpen={setIsSupportPopupOpen}/>}/>
-        <Route path='/about' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>about</p>}/>
+        <Route path='/about' element={<About />}/>
         <Route path='/activities' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>activities</p>}/>
-        <Route path='/calendar' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>calendar</p>}/>
+        <Route path='/calendar' element={<Calendar city={city} setCity={setCity} isNotificationShown={isNotificationShown} setIsNotificationShown={setIsNotificationShown} setIsCitiesPopupOpen={setIsCitiesPopupOpen}/>}/>
         <Route path='/news' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>news</p>}/>
         <Route path='/contacts' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>contacts</p>}/>
 

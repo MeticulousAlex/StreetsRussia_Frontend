@@ -1,0 +1,68 @@
+.event-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  align-items:center;
+  justify-self: center;
+  align-self:stretch;
+  padding-top: 64px;
+  width: 645px;
+  z-index: 1;
+  grid-column: 1/3;
+  background-color: #E8E9EA;
+}
+
+.event-calendar__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.event-calendar__button {
+  width: 238px;
+  height: 43px;
+  padding: 12px 18px;
+  border: 1px solid #222;
+  font-family: 'Bahnschrift', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.event-calendar__button_type_close {
+  background-color: #fff;
+  color: #222;
+}
+
+.event-calendar__button_type_select {
+  background-color: #B73A34;
+  color: #fff;
+}
+
+.color-calendar {
+  background-color: #E8E9EA !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+}
+
+.calendar__header {
+  justify-content: space-between;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  border-bottom: 1px #222 solid;
+  padding-bottom: 27px !important;
+}
+
+.calendar__days, .calendar__weekdays {
+  gap: 15px !important;
+}
+
+.calendar__weekdays {
+  padding-top: 36px;
+}
+
+.calendar__day-box {
+  width: calc(60% + 8px) !important;
+  height: 100% !important;
+}
