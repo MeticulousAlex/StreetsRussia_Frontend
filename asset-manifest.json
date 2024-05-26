@@ -1,12 +1,20 @@
 {
   "files": {
-    "main.css": "/StreetsRussia_Frontend/static/css/main.9f66466e.css",
-    "main.js": "/StreetsRussia_Frontend/static/js/main.d8a2a835.js",
+    "main.css": "/StreetsRussia_Frontend/static/css/main.5ec2e7a0.css",
+    "main.js": "/StreetsRussia_Frontend/static/js/main.d3b8f82a.js",
     "static/js/453.039ccdd4.chunk.js": "/StreetsRussia_Frontend/static/js/453.039ccdd4.chunk.js",
     "static/media/Promo_video.mp4": "/StreetsRussia_Frontend/static/media/Promo_video.f3b09438f64d4572083d.mp4",
+    "static/media/disciplines_grid_2.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_2.a5d005844375c30b06bb.png",
+    "static/media/disciplines_grid_6.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_6.34179a10e434fcf2ca36.png",
+    "static/media/disciplines_grid_5.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_5.34d689557589ca7d2f91.png",
+    "static/media/disciplines_grid_3.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_3.30641580e9ae71b47f62.png",
+    "static/media/disciplines_grid_1.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_1.f7e3b47692193d55f886.png",
     "static/media/street_art.png": "/StreetsRussia_Frontend/static/media/street_art.9568beab5480f578cb3c.png",
+    "static/media/disciplines_grid_4.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_4.2a436a95e3c3b66ecbe1.png",
     "static/media/BAHNSCHRIFT.TTF": "/StreetsRussia_Frontend/static/media/BAHNSCHRIFT.b00e12e37c52124aa504.TTF",
+    "static/media/discipline_street_art_placeholder.png": "/StreetsRussia_Frontend/static/media/discipline_street_art_placeholder.71851e0d5f6060dac765.png",
     "static/media/parkour.png": "/StreetsRussia_Frontend/static/media/parkour.a456adcee88276a10f4a.png",
+    "static/media/sprite_blue_discipline_page.png": "/StreetsRussia_Frontend/static/media/sprite_blue_discipline_page.7762927f2d8246d7e1e4.png",
     "static/media/scateboarding.png": "/StreetsRussia_Frontend/static/media/scateboarding.8709319650070a9cca51.png",
     "static/media/blue_sprite_activities_selector.png": "/StreetsRussia_Frontend/static/media/blue_sprite_activities_selector.5df9f401e937ec92adc1.png",
     "static/media/dancing.png": "/StreetsRussia_Frontend/static/media/dancing.880451350f5c544420f9.png",
@@ -15,19 +23,23 @@
     "static/media/Benzin-Bold.woff2": "/StreetsRussia_Frontend/static/media/Benzin-Bold.8a2face31d8ba1bbe4df.woff2",
     "static/media/Benzin-Medium.woff2": "/StreetsRussia_Frontend/static/media/Benzin-Medium.c6bb4354f4779adb217a.woff2",
     "static/media/logo_white_vector.svg": "/StreetsRussia_Frontend/static/media/logo_white_vector.560f3cc258703650dc860eca714ee7e5.svg",
+    "static/media/logo_white_extended.svg": "/StreetsRussia_Frontend/static/media/logo_white_extended.0d302af817597285266984ed98dabdbd.svg",
+    "static/media/youtube_logo.svg": "/StreetsRussia_Frontend/static/media/youtube_logo.1e82674daa3443d4a602c7acdf9b8298.svg",
+    "static/media/vk_logo.svg": "/StreetsRussia_Frontend/static/media/vk_logo.66f2c5e76d20acca55e38c819af1d1b2.svg",
     "static/media/indicator_chosen.svg": "/StreetsRussia_Frontend/static/media/indicator_chosen.f1c42f8904f0f3e62676.svg",
     "static/media/dropdown_arrow.svg": "/StreetsRussia_Frontend/static/media/dropdown_arrow.ba339b2db3b5157db96ea717cad3e080.svg",
     "static/media/search-icon.svg": "/StreetsRussia_Frontend/static/media/search-icon.ee988e760a7d5ec78410c15e1b46ced2.svg",
     "index.html": "/StreetsRussia_Frontend/index.html",
     "static/media/ic_arrow_left.svg": "/StreetsRussia_Frontend/static/media/ic_arrow_left.cb0c134c0c91fac720e2b14b6f42d536.svg",
+    "static/media/back_arrow.svg": "/StreetsRussia_Frontend/static/media/back_arrow.889efc8c170bf81bab1a189ed1a5686b.svg",
     "static/media/ic_arrow_right.svg": "/StreetsRussia_Frontend/static/media/ic_arrow_right.88dfb92fbbb80b0bc6957b74fcbeedf9.svg",
     "static/media/cancel_is_your_city.svg": "/StreetsRussia_Frontend/static/media/cancel_is_your_city.36eacae1943a2814d5e2.svg",
-    "main.9f66466e.css.map": "/StreetsRussia_Frontend/static/css/main.9f66466e.css.map",
-    "main.d8a2a835.js.map": "/StreetsRussia_Frontend/static/js/main.d8a2a835.js.map",
+    "main.5ec2e7a0.css.map": "/StreetsRussia_Frontend/static/css/main.5ec2e7a0.css.map",
+    "main.d3b8f82a.js.map": "/StreetsRussia_Frontend/static/js/main.d3b8f82a.js.map",
     "453.039ccdd4.chunk.js.map": "/StreetsRussia_Frontend/static/js/453.039ccdd4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f66466e.css",
-    "static/js/main.d8a2a835.js"
+    "static/css/main.5ec2e7a0.css",
+    "static/js/main.d3b8f82a.js"
   ]
 }
