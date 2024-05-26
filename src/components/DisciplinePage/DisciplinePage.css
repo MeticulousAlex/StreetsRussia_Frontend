@@ -1,0 +1,176 @@
+.discipline-page{
+    position: relative;
+    background-color: #222222;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 65px 0;;
+}
+
+.back-button{
+    display: flex;
+    gap:8px;
+    padding: 15px 0 0 ;
+    margin:32px 0 40px;
+    border:none;
+    background-color: transparent;
+    align-items: center;
+    pointer-events: none;
+    transition:opacity linear 0.1s;
+    z-index: 2;
+}
+
+.back-button:hover{
+    opacity:0.6;
+}
+
+.back-button__arrow{
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.back-button__text{
+    margin:0;
+    pointer-events: auto;
+    color:white;
+    font-family: 'Bahnschrift',serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    cursor:pointer;
+    
+}
+
+.discipline-page__title{
+    margin: 0 0 40px 0;
+    font-family: 'Benzin', serif;
+    color:#B73A34;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    align-self:first baseline;
+    z-index: 2;
+}
+
+.discipline-page__description-container{
+    align-self: first baseline;
+    display: flex;
+    gap:20px;
+    z-index: 2;
+}
+
+.discipline-page__description-paragraph{
+    margin:0;
+    max-width:50%;
+    font-family: 'Bahnschrift',serif;
+    color:white;
+    text-align: left;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    font-variation-settings: 'wdth' 89;
+}
+
+.photo-grid{
+    display: grid;
+    margin:40px 0 20px;
+    padding:0;
+    width:100%;
+    box-sizing: border-box;
+    grid-template-columns: 33.75% 27.77% 26.66%;
+    grid-template-rows: auto;
+    gap:20px;
+    z-index: 2;
+
+}
+
+.photo-grid__image{
+    width:100%;
+}
+
+.photo-grid__item{
+    padding:0;
+    list-style-type: none;
+}
+
+.photo-grid__item_short{
+    grid-row: 4;
+    grid-column:1;
+}
+
+.photo-grid__item_medium{
+    grid-row: span 2;
+}
+
+.photo-grid__item_long{
+    grid-row: span 3;
+    grid-column: 1;
+}
+
+
+.discipline-page__button{
+    padding:12px 18px;
+    color:black;
+    border:none;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: "Bahnschrift";
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    cursor: pointer;
+    transition: opacity linear 0.1s, border-color linear 0.1s;
+    align-self: first baseline;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.discipline-page__button:hover{
+    opacity:0.8;
+    border-color: rgba(0,0,0,0.5);
+}
+
+.discipline-page__button_support{
+    background-color: #FFFFFF;  
+}
+
+.discipline-page__button_join{
+    background-color:#B73A34;
+    color:white;
+    margin: 0 0 300px;
+}
+
+.discipline-page__caption{
+    margin:0;
+    padding: 32px 0 20px;
+    font-family: 'Bahnschrift',serif;
+    color:white;
+    text-align: left;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    font-variation-settings: 'wdth' 89;
+    z-index: 2;
+}
+
+.sprite{
+    position:absolute;
+    z-index: 1;
+}
+
+.sprite_discipline-page-red{
+    top:0;
+    right:0;
+    width: calc(100% / 1440) * 100;
+}
+
+.sprite_discipline-page-blue{
+    width: calc(100% / 1440) * 100;
+    bottom:0;
+    left:0;
+}

@@ -3,6 +3,8 @@ import '../../fonts/fonts.css';
 import React from 'react';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
+import ActivitiesPage from '../ActivitiesPage/ActivitiesPage';
+import DisciplinePage from '../DisciplinePage/DisciplinePage';
 import AuthPage from '../AuthPage/AuthPage';
 import CititesPopup from '../CitiesPopup/CititesPopup';
 import { Route, Routes, useNavigate} from 'react-router-dom';
@@ -84,10 +86,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Main isJoinPopupOpen={isJoinPopupOpen} setIsJoinPopupOpen={setIsJoinPopupOpen} isSupportPopupOpen={isSupportPopupOpen} setIsSupportPopupOpen={setIsSupportPopupOpen}/>}/>
         <Route path='/about' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>about</p>}/>
-        <Route path='/activities' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>activities</p>}/>
+        <Route path='/disciplines' element={<ActivitiesPage/>}/>
+        <Route path='/disciplines/activity' element={<DisciplinePage/>}/>
         <Route path='/calendar' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>calendar</p>}/>
         <Route path='/news' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>news</p>}/>
         <Route path='/contacts' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>contacts</p>}/>
+
 
 
         <Route path='/signin' element={<AuthPage pageType='login' setIsAuthPage={setIsAuthPage} isAuthorizedUser={isAuthorizedUser} setIsAuthorizedUser={setIsAuthorizedUser} setCurrentUser={setCurrentUser} handleLogin={handleLogin} serverAuthErrorMessage={serverAuthErrorMessage} setServerAuthErrorMessage={setServerAuthErrorMessage}/>}/>
