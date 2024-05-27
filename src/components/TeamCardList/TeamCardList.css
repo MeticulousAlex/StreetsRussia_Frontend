@@ -1,0 +1,73 @@
+@keyframes slider {
+  from {
+    width: 0px;
+  }
+  50% {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+
+}
+
+.slider__animation {
+  animation: slider 3s ease-in;
+
+}
+
+.team__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.team__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.team__button {
+  border: none;
+  background-color: transparent;
+  background-size: cover;
+  width: 90px;
+  height: 30px;
+}
+
+.team__button_type_left {
+  background-image: url(../../images/left_arrow.svg);
+}
+
+.team__button_type_right {
+  background-image: url(../../images/right_arrow.svg);
+}
+
+.team__list {
+  overflow: hidden;
+  margin: 0;
+  padding: 20px 0 24px;
+  border-bottom: 2px solid var(--bg-text-dark, #222);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.team__end-of-list {
+  justify-content: start;
+}
+
+.team__title {
+  margin: 0;
+  font-family: 'Bahnschrift', serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: left;
+  color: #fff;
+  padding-top: 24px;
+}

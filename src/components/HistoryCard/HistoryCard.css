@@ -1,0 +1,32 @@
+.history {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.history__point {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+
+.history__title {
+  width: 20%;
+  font-weight: 600;
+}
+
+.history__title, .history__text {
+  margin: 0;
+  text-align: left;
+  color: #fff;
+  font-family: 'Bahnschrift', serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.history__text {
+  width: 200vw;
+  font-weight: 400;
+}

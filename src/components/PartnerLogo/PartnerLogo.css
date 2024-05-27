@@ -1,0 +1,13 @@
+.partner-logo {
+  width: 232px;;
+  max-height: inherit;
+}
+
+.partner-logo:hover {
+  opacity: 50%;
+}
+
+.partner-logo:active {
+  opacity: 60%;
+
+}

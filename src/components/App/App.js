@@ -7,6 +7,8 @@ import Main from '../Main/Main';
 import ActivitiesPage from '../ActivitiesPage/ActivitiesPage';
 import DisciplinePage from '../DisciplinePage/DisciplinePage';
 import AuthPage from '../AuthPage/AuthPage';
+import About from '../About/About';
+import Calendar from '../Calendar/Calendar';
 import CititesPopup from '../CitiesPopup/CititesPopup';
 import JoinPopup from '../JoinPopup/JoinPopup';
 import SupportPopup from '../SupportPopup/SupportPopup';
@@ -15,6 +17,7 @@ import News from '../News/News';
 import NewsItem from '../NewsItem/NewsItem';
 import { Route, Routes, useNavigate} from 'react-router-dom';
 import { register, authorize } from '../../utils/MainApi';
+import {EVENTS} from '../events';
 
 function App() {
 
@@ -43,7 +46,7 @@ function App() {
   const [city, setCity] = React.useState(localStorage.getItem('currentCity') || '');
   const [isNotificationShown, setIsNotificationShown] = React.useState(true);
 
-  // News
+  const [filteredEvents, setFilteredEvents] = React.useState([]);
 
   const [currentNewsTitle, setCurrentNewsTitle] = React.useState('News_0');
 
@@ -85,7 +88,13 @@ function App() {
     setIsAuthorizedUser(true);
   }
 
+  function getCityEvents() {
+    setFilteredEvents(() => EVENTS.filter(ev => ev.city === city));
+  }
 
+  React.useEffect(() => {
+    getCityEvents()
+  }, [city])
 
   React.useEffect(()=>{
     navigate('/', {replace: true})
@@ -96,10 +105,10 @@ function App() {
       <Header setIsSupportPopupOpen={setIsSupportPopupOpen} setIsEnterPopupOpen={setIsEnterPopupOpen} city={city} setCity={setCity} isNotificationShown={isNotificationShown} setIsNotificationShown={setIsNotificationShown} setIsCitiesPopupOpen={setIsCitiesPopupOpen}/>
       <Routes>
         <Route path='/' element={<Main setIsJoinPopupOpen={setIsJoinPopupOpen}/>}/>
-        <Route path='/about' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>about</p>}/>
         <Route path='/disciplines' element={<ActivitiesPage/>}/>
         <Route path='/disciplines/activity' element={<DisciplinePage/>}/>
-        <Route path='/calendar' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>calendar</p>}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/calendar' element={<Calendar filteredEvents={filteredEvents} city={city} setCity={setCity} isNotificationShown={isNotificationShown} setIsNotificationShown={setIsNotificationShown} setIsCitiesPopupOpen={setIsCitiesPopupOpen}/>}/>
         <Route path='/news' element={<News setCurrentNewsTitle={setCurrentNewsTitle}/>}/>
         <Route path='/news/news-item' element={<NewsItem currentNewsTitle={currentNewsTitle}/>}/>
         <Route path='/contacts' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>contacts</p>}/>

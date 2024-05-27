@@ -1,0 +1,10 @@
+.event-item__img {
+  width: 665px;
+  height: 763px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.event-item__img_type_slider {
+  width: 384px;
+}

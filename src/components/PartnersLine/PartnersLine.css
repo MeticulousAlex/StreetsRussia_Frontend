@@ -1,0 +1,53 @@
+.partners-line {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--bg-text-dark, #222);
+}
+
+.partners-line__title {
+  max-width: 20%;
+  color: #fff;
+  text-align: left;
+  font-family: 'Bahnschrift', serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%
+}
+
+.partners-line__button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  background-size: cover;
+}
+
+.partners-line__button_type_left {
+  background-image: url('../../images/left_part_arrow.svg')
+}
+
+.button__active_left {
+  background-image: url('../../images/left_active.svg')
+}
+
+.partners-line__button_type_right {
+  background-image: url('../../images/right_part_arrow.svg')
+}
+
+.button__active_right {
+  background-image: url('../../images/right_active.svg')
+}
+
+.partners-line__list {
+  min-width: 484px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.partners-line__end-of-list {
+  justify-content: start;
+}
