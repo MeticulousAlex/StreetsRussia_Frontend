@@ -1,7 +1,6 @@
 import React from "react";
 import "./JoinPopup.css";
 import Popup from "../Popup/Popup";
-import temporaryCities from "../temporaryCities/temporaryCities";
 import { IMaskInput } from 'react-imask';
 
 export default function JoinPopup({isJoinPopupOpen, setIsJoinPopupOpen}){
@@ -48,14 +47,14 @@ export default function JoinPopup({isJoinPopupOpen, setIsJoinPopupOpen}){
                     value={name || ''}
                     onChange={handleNameChange}
                     placeholder="ФИО полностью"
-                    className="popup__input popup__input_type_email"
+                    className="popup__input popup__input_join popup__input_type_email"
                     required
                     minLength="2"
                     maxLength="200"
                     />
                     <span className="popup__form-input-error email-error"></span>
                 </label>
-                <select name="region_id" className=" popup__input popup__input_dropdown" defaultValue="">
+                <select name="region_id" className=" popup__input popup__input_join popup__input_dropdown" defaultValue="">
                     <option hidden disabled={true} value="">Регион</option>
                     <option value="22">Алтайский край</option>
                     <option value="28">Амурская область</option>
@@ -150,7 +149,7 @@ export default function JoinPopup({isJoinPopupOpen, setIsJoinPopupOpen}){
                     value={email || ''}
                     onChange={handleEmailChange}
                     placeholder="электронная почта"
-                    className="popup__input popup__input_type_email"
+                    className="popup__input popup__input_join popup__input_type_email"
                     required
                     minLength="2"
                     maxLength="200"
@@ -159,7 +158,7 @@ export default function JoinPopup({isJoinPopupOpen, setIsJoinPopupOpen}){
                 </label>
                 <label className="popup__form-field">
                     <IMaskInput
-                    className="popup__input"
+                    className="popup__input popup__input_join"
                     mask="+7(000)000-00-00"
                     radix="."
                     value=""
@@ -188,7 +187,7 @@ export default function JoinPopup({isJoinPopupOpen, setIsJoinPopupOpen}){
                     value={socialMedia || ''}
                     onChange={handleSocialMediaChange}
                     placeholder="Социальная сеть для связи"
-                    className="popup__input"
+                    className="popup__input popup__input_join"
                     required
                     minLength="2"
                     maxLength="200"
@@ -201,7 +200,7 @@ export default function JoinPopup({isJoinPopupOpen, setIsJoinPopupOpen}){
                     <p className="popup__agreement-title">Я согласен с <a className="popup__agreement-title popup__agreement-title_offer" href="https://streetrussia.ru/static/files/dogovor-oferty.pdf" target="_blank" rel="noreferrer">правами и обязанностями участника</a><br/>ОООУКС “Улицы России”</p>
                 </div>
                 
-                <button className="popup__button_submit" type="submit">Вступить</button>
+                <button className="popup__button_submit" type="submit">Вступить в организацию</button>
                 
             </form>
             

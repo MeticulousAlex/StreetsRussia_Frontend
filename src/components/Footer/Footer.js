@@ -14,7 +14,7 @@ export default function Footer(){
             </div>
             <ul className='footer__nav-list'>
                 <li className='footer__nav-list-item'><Link className='footer__nav-link' to='/' >Главная</Link></li>
-                <li className='footer__nav-list-item'><Link className='footer__nav-link' to='/blog' >Блог</Link></li>
+                <li className='footer__nav-list-item'><Link className='footer__nav-link' to='/news' >Новости</Link></li>
                 <li className='footer__nav-list-item'><Link className='footer__nav-link' to='/about' >О нас</Link></li>
                 <li className='footer__nav-list-item'><Link className='footer__nav-link' to='/calendar' >Календарь мероприятий</Link></li>
                 <li className='footer__nav-list-item'><Link className='footer__nav-link' to='/disciplines' >Виды культуры и спорта</Link></li>
@@ -22,8 +22,8 @@ export default function Footer(){
             </ul>
             <div className='footer__social'>
                 <div className='footer__social-links'>
-                    <a className='footer__social-link'href=''><img className='footer__social-logo' src={vkLogo}/></a>
-                    <a className='footer__social-link'href=''><img className='footer__social-logo' src={youtubeLogo}/></a>
+                    <a className='footer__social-link'href='https://vk.com/streetrf' target='_blank' rel="noreferrer"><img className='footer__social-logo' src={vkLogo}/></a>
+                    <a className='footer__social-link'href='https://www.youtube.com/c/STREETRUSSIA' target='_blank' rel="noreferrer"><img className='footer__social-logo' src={youtubeLogo} /></a>
                 </div>
                 <p className='footer__rights'>2021-2024<br/>«Улицы России»</p>
             </div>

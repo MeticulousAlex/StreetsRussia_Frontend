@@ -2,7 +2,6 @@ import './ActivitiesPage.css';
 
 import React from 'react';
 import { Carousel, Card } from '../ActivitiesCarousel/ActivitiesCarousel';
-import Footer from '../Footer/Footer';
 import dancingImage from '../../images/dancing.png';
 import skateboardingImage from '../../images/scateboarding.png';
 import streetArtImage from '../../images/street_art.png';
@@ -46,14 +45,13 @@ export default function ActivitiesPage(){
             </div>  
             
             <p className='activities-page__caption'>Выбери направление дисциплины для просмотра фотографий, видеоматериалов и описания</p>
-            <Carousel active={active} setActive={setActive} disciplines={cardsArr} setChosenDiscipline={setChosenDiscipline}>
+            <Carousel page='disciplines' active={active} setActive={setActive} disciplines={cardsArr} setChosenDiscipline={setChosenDiscipline}>
                 {cardsArr.map((card) => (
                     <Card title={card.title} content={card.content}/>
                 ))}
             </Carousel>
             <img className='sprite sprite_activities-selector-red' src={redSprite}></img>
             <img className='sprite sprite_activities-selector-blue' src={blueSprite}></img>
-            <Footer/>
         </div>
     )
 }

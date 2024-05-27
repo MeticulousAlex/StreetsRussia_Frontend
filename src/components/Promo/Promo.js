@@ -19,7 +19,7 @@ export default function Promo({setIsJoinPopupOpen}){
     })
 
     return(
-        <div className='promo__container'>
+        <div className='promo'>
             <video className={visibility ? "promo__video-item promo__video-item_visible" : "promo__video-item"}autoPlay muted loop>
                 <source src={video} type="video/mp4"/>
             </video>

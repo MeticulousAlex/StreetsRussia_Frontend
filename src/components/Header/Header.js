@@ -7,7 +7,7 @@ import '../../fonts/fonts.css';
 import logo from "../../images/logo_white_vector.svg";
 
 
-export default function Header({setIsSupportPopupOpen, setIsJoinPopupOpen, city, setCity, isNotificationShown, setIsNotificationShown, setIsCitiesPopupOpen}){
+export default function Header({setIsSupportPopupOpen, setIsEnterPopupOpen, city, setCity, isNotificationShown, setIsNotificationShown, setIsCitiesPopupOpen}){
 
     const [isMenuOpened, setIsMenuOpened] = React.useState(false);
 
@@ -20,7 +20,7 @@ export default function Header({setIsSupportPopupOpen, setIsJoinPopupOpen, city,
     }
 
     function handleJoinPopup(){
-        setIsJoinPopupOpen(true)
+        setIsEnterPopupOpen(true)
     }
 
     return(

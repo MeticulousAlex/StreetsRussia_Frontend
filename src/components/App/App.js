@@ -2,11 +2,17 @@ import './App.css';
 import '../../fonts/fonts.css';
 import React from 'react';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import Main from '../Main/Main';
 import ActivitiesPage from '../ActivitiesPage/ActivitiesPage';
 import DisciplinePage from '../DisciplinePage/DisciplinePage';
 import AuthPage from '../AuthPage/AuthPage';
 import CititesPopup from '../CitiesPopup/CititesPopup';
+import JoinPopup from '../JoinPopup/JoinPopup';
+import SupportPopup from '../SupportPopup/SupportPopup';
+import EnterPopup from '../EnterPopup/EnterPopup';
+import News from '../News/News';
+import NewsItem from '../NewsItem/NewsItem';
 import { Route, Routes, useNavigate} from 'react-router-dom';
 import { register, authorize } from '../../utils/MainApi';
 
@@ -29,12 +35,17 @@ function App() {
   const [isSupportPopupOpen, setIsSupportPopupOpen] = React.useState(false);
   const [isJoinPopupOpen, setIsJoinPopupOpen] = React.useState(false);
   const [isCitiesPopupOpen, setIsCitiesPopupOpen] = React.useState(false);
+  const [isEnterPopupOpen, setIsEnterPopupOpen] = React.useState(false);
 
 
   // Geolocation
 
   const [city, setCity] = React.useState(localStorage.getItem('currentCity') || '');
   const [isNotificationShown, setIsNotificationShown] = React.useState(true);
+
+  // News
+
+  const [currentNewsTitle, setCurrentNewsTitle] = React.useState('News_0');
 
   // ----------------- FUNCTIONS ---------------------
 
@@ -82,14 +93,15 @@ function App() {
 
   return (
     <div className="App">
-      <Header setIsSupportPopupOpen={setIsSupportPopupOpen} setIsJoinPopupOpen={setIsJoinPopupOpen} city={city} setCity={setCity} isNotificationShown={isNotificationShown} setIsNotificationShown={setIsNotificationShown} setIsCitiesPopupOpen={setIsCitiesPopupOpen}/>
+      <Header setIsSupportPopupOpen={setIsSupportPopupOpen} setIsEnterPopupOpen={setIsEnterPopupOpen} city={city} setCity={setCity} isNotificationShown={isNotificationShown} setIsNotificationShown={setIsNotificationShown} setIsCitiesPopupOpen={setIsCitiesPopupOpen}/>
       <Routes>
-        <Route path='/' element={<Main isJoinPopupOpen={isJoinPopupOpen} setIsJoinPopupOpen={setIsJoinPopupOpen} isSupportPopupOpen={isSupportPopupOpen} setIsSupportPopupOpen={setIsSupportPopupOpen}/>}/>
+        <Route path='/' element={<Main setIsJoinPopupOpen={setIsJoinPopupOpen}/>}/>
         <Route path='/about' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>about</p>}/>
         <Route path='/disciplines' element={<ActivitiesPage/>}/>
         <Route path='/disciplines/activity' element={<DisciplinePage/>}/>
         <Route path='/calendar' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>calendar</p>}/>
-        <Route path='/news' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>news</p>}/>
+        <Route path='/news' element={<News setCurrentNewsTitle={setCurrentNewsTitle}/>}/>
+        <Route path='/news/news-item' element={<NewsItem currentNewsTitle={currentNewsTitle}/>}/>
         <Route path='/contacts' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>contacts</p>}/>
 
 
@@ -98,6 +110,10 @@ function App() {
         <Route path='/signup' element={<AuthPage pageType='register' setIsAuthPage={setIsAuthPage} isAuthorizedUser={isAuthorizedUser} setIsAuthorizedUser={setIsAuthorizedUser} setCurrentUser={setCurrentUser} handleRegister={handleRegister} serverAuthErrorMessage={serverAuthErrorMessage} setServerAuthErrorMessage={setServerAuthErrorMessage}/>}/>
       </Routes>
       <CititesPopup isCitiesPopupOpen={isCitiesPopupOpen} setIsCitiesPopupOpen={setIsCitiesPopupOpen} city={city} setCity={setCity}/>
+      <JoinPopup isJoinPopupOpen={isJoinPopupOpen} setIsJoinPopupOpen={setIsJoinPopupOpen}/>
+      <SupportPopup isSupportPopupOpen={isSupportPopupOpen} setIsSupportPopupOpen={setIsSupportPopupOpen}/>
+      <EnterPopup isEnterPopupOpen={isEnterPopupOpen} setIsEnterPopupOpen={setIsEnterPopupOpen}/>
+      <Footer/>
     </div>
   );
 }

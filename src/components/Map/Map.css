@@ -1,3 +1,24 @@
+.map{
+    position: relative;
+    padding-bottom:300px;
+    z-index: 2;
+}
+
+.map__title{
+    font-family: 'Benzin',serif;
+    color:#1E5B9C;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    padding:40px 0 15px 65px;
+    margin:0;
+}
+
+.map__district{
+    z-index: 5;
+}
 .map__district:hover path{
     fill: #B73A34;
 }

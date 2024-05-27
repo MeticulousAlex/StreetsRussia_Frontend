@@ -28,6 +28,22 @@ export default function Popup({isPopupOpen,type,children}){
             </div>
         </section>
         )
+    } else if (type ==='join'){
+        return(
+            <section className="popup" onClick={closeByBackground}>
+                <div className="popup__container">
+                    <div className="popup__content popup__content_join">
+                    <button
+                        aria-label="Закрыть"
+                        className="popup__button popup__button_type_cancel"
+                        type="button"
+                        onClick={closePopup}
+                    />
+                        {children}
+                    </div>
+                </div>
+            </section>
+        )
     }
     return(
         <section className="popup" onClick={closeByBackground}>
