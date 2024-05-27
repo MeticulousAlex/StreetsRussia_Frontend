@@ -80,10 +80,12 @@ function App() {
     setIsAuthorizedUser(true);
   }
 
-  React.useEffect(() => {
+  function getCityEvents() {
     setFilteredEvents(() => EVENTS.filter(ev => ev.city === city));
-    console.log(city);
-    console.log(filteredEvents);
+  }
+
+  React.useEffect(() => {
+    getCityEvents()
   }, [city])
 
   React.useEffect(()=>{

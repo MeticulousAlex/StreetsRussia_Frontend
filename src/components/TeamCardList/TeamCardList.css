@@ -1,3 +1,21 @@
+@keyframes slider {
+  from {
+    width: 0px;
+  }
+  50% {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+
+}
+
+.slider__animation {
+  animation: slider 3s ease-in;
+
+}
+
 .team__header {
   display: flex;
   flex-direction: row;

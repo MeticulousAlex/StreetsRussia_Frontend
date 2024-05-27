@@ -12,6 +12,7 @@ import { discipline } from '../constants';
 
 export default function Calendar({city, setCity, isNotificationShown, setIsNotificationShown, setIsCitiesPopupOpen, filteredEvents}) {
 
+
   const [isEvent, setIsEvent] = React.useState(false);
   const [selectedDiscipline, setSelectedDiscipline] = React.useState('');
   const [selectedDate, setSelectedDate] = React.useState('');

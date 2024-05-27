@@ -6,6 +6,7 @@ export default function TeamCardList({teamHeader, team}) {
 
   const [isSlider, setIsSlider] = React.useState(false);
   const [isEndOfList, setIsEndOfList] = React.useState(false);
+  const [isAnimation, setIsAnimation] = React.useState(false);
 
   const [sliderStart , setSliderStart] = React.useState(0);
 
@@ -27,6 +28,7 @@ export default function TeamCardList({teamHeader, team}) {
   React.useEffect(() => {
     if (team.length > 3) {
       setIsSlider(true);
+      setIsAnimation(true);
     }
   }, [])
 
@@ -40,7 +42,7 @@ export default function TeamCardList({teamHeader, team}) {
             <button className='team__button team__button_type_right' onClick={handleSlideRigth}/>
           </div>}
       </div>
-      <div className={`team__list ${isEndOfList&&'team__end-of-list'}`}>
+      <div className={`team__list ${isEndOfList&&'team__end-of-list'} ${isAnimation&&'slider__animation'}`}>
         {team.slice(sliderStart, (sliderStart+4)).map((item) => (
           <Card
           key={item.id}

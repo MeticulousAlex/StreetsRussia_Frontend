@@ -42,6 +42,7 @@
 }
 
 .partners-line__list {
+  min-width: 484px;
   display: flex;
   flex-direction: row;
   gap: 20px;

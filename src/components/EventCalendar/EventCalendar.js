@@ -33,10 +33,9 @@ export default function EventCalendar({events,
         } else {
           onSetDate('');
           onDateClick([])};
-
     },
   })
-  }, [])
+  }, [events])
 
   return (
     <div className='event-calendar' >
