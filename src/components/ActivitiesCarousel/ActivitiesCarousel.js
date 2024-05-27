@@ -15,15 +15,18 @@ export function Card({title,content}){
     )
 }
 
-export function Carousel({active, setActive, disciplines, setChosenDiscipline, children}){
+export function Carousel({page, active, setActive, disciplines, setChosenDiscipline, children}){
 
     const maxVisibility = 3;
 
     const count = React.Children.count(children);
 
-    function setCard(e){
-        setActive(Number(e.target.id));
-        setChosenDiscipline(disciplines[Number(e.target.id)].title);
+    function handleClickCard(e){
+        if (page === 'disciplines'){
+            setActive(Number(e.target.id));
+            setChosenDiscipline(disciplines[Number(e.target.id)].title);
+        }
+        
     }
 
     function toggleRight(){
@@ -68,11 +71,11 @@ export function Carousel({active, setActive, disciplines, setChosenDiscipline, c
             </div>
             <div className='radio-selectors'>
                 {}
-                <input type='radio' className='radio-button' name='cards' id='0' checked={active===0?true:false}onChange={setCard}/>
-                <input type='radio' className='radio-button' name='cards' id='1' checked={active===1?true:false}onChange={setCard}/>
-                <input type='radio' className='radio-button' name='cards' id='2' checked={active===2?true:false}defaultChecked onChange={setCard}/>
-                <input type='radio' className='radio-button' name='cards' id='3' checked={active===3?true:false}onChange={setCard}/>
-                <input type='radio' className='radio-button' name='cards' id='4' checked={active===4?true:false}onChange={setCard}/>
+                <input type='radio' className='radio-button' name='cards' id='0' checked={active===0?true:false}onChange={handleClickCard}/>
+                <input type='radio' className='radio-button' name='cards' id='1' checked={active===1?true:false}onChange={handleClickCard}/>
+                <input type='radio' className='radio-button' name='cards' id='2' checked={active===2?true:false}defaultChecked onChange={handleClickCard}/>
+                <input type='radio' className='radio-button' name='cards' id='3' checked={active===3?true:false}onChange={handleClickCard}/>
+                <input type='radio' className='radio-button' name='cards' id='4' checked={active===4?true:false}onChange={handleClickCard}/>
             </div>
         </>
     );

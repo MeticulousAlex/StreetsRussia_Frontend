@@ -1,0 +1,59 @@
+.news-item{
+    width:100%;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    padding:0 65px;
+    background-color: #222222;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.news-item__title{
+    font-family: 'Benzin',serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color:white;
+    margin: 0 0 40px;
+    z-index: 2;
+}
+
+.news-item__cover-image{
+    width:100%;
+    z-index: 2;
+}
+
+.news-item__paragraph{
+    font-family: 'Bahnschrift',serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    color:white;
+    font-variation-settings: 'wdth' 87;
+    z-index: 2;
+    margin-bottom: 300px;
+}
+
+.news-item__paragraph-link{
+    color:white;
+    text-decoration: none;
+    transition:opacity linear 0.1s;
+}
+
+.news-item__paragraph-link:hover{
+    opacity:0.6;
+}
+
+.sprite__news-item_red{
+    bottom:0;
+    right:0;
+}
+
+.sprite__news-item_blue{
+    bottom:0;
+    left:0;
+}

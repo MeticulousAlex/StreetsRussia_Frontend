@@ -1,6 +1,5 @@
 import './DisciplinePage.css';
 
-import Footer from '../Footer/Footer';
 import backArrow from '../../images/back_arrow.svg';
 import descriptionPlaceholder from '../../images/discipline_street_art_placeholder.png';
 
@@ -45,7 +44,6 @@ export default function DisciplinePage({discipline}){
                     <button className='discipline-page__button discipline-page__button_support '>Посмотреть больше фото</button>
                     <p className='discipline-page__caption'>Понравилось направление? Нажми на кнопку и получи возможность участвовать в мероприятиях в своём городе и развиваться вместе с нами!</p>
                     <button type='button' className='discipline-page__button discipline-page__button_join'>Присоединиться</button>
-                    <Footer/>
                     <img className='sprite sprite_discipline-page-red' src={redSprite}></img>
                     <img className='sprite sprite_discipline-page-blue' src={blueSprite}></img>
             </div>
