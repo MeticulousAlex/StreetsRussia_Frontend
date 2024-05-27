@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Rabotenko from '../images/fedTeam/Rabotenko.png';
 import Zamerova from '../images/fedTeam/Zamerova.png';
 import Grudnev from '../images/fedTeam/Grudnev.png';
@@ -46,9 +45,6 @@ import expressArt from '../images/partners/express_art.svg';
 import proryv from '../images/partners/proryv.png';
 import dom from '../images/partners/dom.png';
 import streetWorkout from '../images/partners/street_workout.svg';
-
-
-export const availableCities = ['Москва', 'Екатеринбург', 'Краснодар', 'Нижний новгород', 'Новосибирск', 'Ростов-на-Дону', 'Самара', 'Санкт-Петербург']
 
 export const targets = [
   {
@@ -312,23 +308,22 @@ export const regPartners = [
 export const discipline = [
   {
     id:1,
-    title: 'bmx'
+    title: 'DANCING'
   },
   {id:2,
-    title: 'scoot'
+    title: 'SKATEBOARDING'
   },
   {id:3,
-    title: 'rap'
+    title: 'STREET ART'
   },
   {id:4,
-    title: 'workout'
+    title: 'PARKOUR'
   }, {
     id:5,
-    title: 'graff'
+    title: 'WORKOUT'
   }
 ]
 
-=======
 export const availableCities = [
     {name:'Москва', coordinates:[55.75222,37.61556]},
     {name:'Екатеринбург', coordinates:[56.8519,60.6122]},
@@ -338,4 +333,3 @@ export const availableCities = [
     {name:'Ростов-на-Дону', coordinates:[47.23135,39.72328]},
     {name:'Самара', coordinates:[53.20007,50.15]},
     {name:'Санкт-Петербург', coordinates:[59.93863,30.31413]}]
->>>>>>> main

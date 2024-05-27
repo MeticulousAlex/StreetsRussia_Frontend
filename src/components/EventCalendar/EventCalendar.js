@@ -25,11 +25,15 @@ export default function EventCalendar({events,
       fontFamilyWeekdays: 'Bahnschrift, serif',
       fontFamilyBody: 'Bahnschrift, serif',
       eventsData: events,
-      selectedDateClicked: (currentDate, events) => {
-        if (events) {
+      dateChanged: (currentDate, events) => {
+        onHideEvents();
+        if (events.length) {
           onDateClick(events);
           onSetDate(currentDate);
-        } else onDateClick([]);
+        } else {
+          onSetDate('');
+          onDateClick([])};
+
     },
   })
   }, [])

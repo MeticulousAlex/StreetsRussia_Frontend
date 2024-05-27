@@ -1,41 +1,10 @@
-.event-item {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.event-item__date {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  gap: 64px;
-  background-image: url('../../images/up-arrow_black.svg');
-  background-repeat: no-repeat;
-  background-position: 95% center;
-  background-color: #fff;
-  color: #222;
-  font-family: 'Bahnschrift', serif;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  border-bottom: 1px solid #fff;
-  padding: 12px;
-}
-
-.event-item__date-info {
-  margin: 0; 
-}
-
-.event-item__date-info::first-letter {
-  text-transform: uppercase;
-}
-
 .event-item__img {
-  width: 645px;
+  width: 665px;
   height: 763px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+.event-item__img_type_slider {
+  width: 384px;
 }

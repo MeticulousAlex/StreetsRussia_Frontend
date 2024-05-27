@@ -7,6 +7,10 @@
   background-color: #fff;
 }
 
+.card:hover {
+  opacity: 50%;
+}
+
 .card_type_culture {
   grid-column: 2/3;
   grid-row: 2/3;

@@ -1,20 +1,22 @@
 import './Calendar.css';
-import React, { useEffect } from 'react';
+import React from 'react';
 import Geolocation from '../Geolocation/Geolocation';
 import Filter from '../Filter/Filter';
 import EventCalendar from '../EventCalendar/EventCalendar';
 import DayEventsList from '../DayEventsList/DayEventsList';
+import Footer from '../Footer/Footer';
+
 import noEvent from '../../images/NoEvent.png'; 
 import { discipline } from '../constants';
-import {EVENTS} from '../events';
 
 
-export default function Calendar({city, setCity, isNotificationShown, setIsNotificationShown, setIsCitiesPopupOpen}) {
+export default function Calendar({city, setCity, isNotificationShown, setIsNotificationShown, setIsCitiesPopupOpen, filteredEvents}) {
 
   const [isEvent, setIsEvent] = React.useState(false);
   const [selectedDiscipline, setSelectedDiscipline] = React.useState('');
   const [selectedDate, setSelectedDate] = React.useState('');
   const [dayEvents, setDayEvents] = React.useState([]);
+  const [filteredDayEvents, setFilteredDayEvents] = React.useState([]);
 
   function handleFilter(item) {
     if (item != 'Выбери направление') {
@@ -37,18 +39,20 @@ export default function Calendar({city, setCity, isNotificationShown, setIsNotif
   }
 
   function handleShowInfo() {
-    if (dayEvents.length !== 0) {
-      handleShowEvetns();
-      if (selectedDiscipline != '') {
-        setDayEvents(dayEvents.filter(ev => ev.discipline === selectedDiscipline));
-      } else {
-        console.log(dayEvents);
-      }
+    let eventsCheck = dayEvents;
+    if (selectedDiscipline != '') {
+      setFilteredDayEvents(dayEvents.filter(ev => ev.discipline === selectedDiscipline));
+      eventsCheck = dayEvents.filter(ev => ev.discipline === selectedDiscipline);
     } else {
-      handleHideEvetns()
-    } 
+      setFilteredDayEvents(dayEvents);
+    }
+    if (eventsCheck.length !== 0) {
+      handleShowEvetns();
+    } else {
+      handleHideEvetns();
+    }
   }
-
+  
   return(
     <section className='calendar'>
       <h4 className='calendar__title'>Календарь событий</h4>
@@ -67,26 +71,25 @@ export default function Calendar({city, setCity, isNotificationShown, setIsNotif
           />
           <EventCalendar
             selectedDiscipline={selectedDiscipline} 
-            events={EVENTS}
+            events={filteredEvents}
             onShowEvents={handleShowEvetns}
             onHideEvents={handleHideEvetns}
             onSetDate={handleSetDate}
             onDateClick={setDayEvents}
             onSelect={handleShowInfo}
-            />
+            city={city}
+          />
         </div>
         <div className='calendar__event-info'>
             {!isEvent&&<img className='calendar__event-img' src={noEvent}/>}
             {isEvent&&
-            <>
               <DayEventsList 
                 selectedDate={selectedDate}
-                dayEvents={dayEvents}
-              />              
-            </>}
+                dayEvents={filteredDayEvents}
+              />}
         </div>
       </div>
-      
+      <Footer />
     </section>
   )
 }

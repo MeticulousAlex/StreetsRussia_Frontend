@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   background-color: #222;
   background-image: url('../../images/background.png');
   background-size: cover;
@@ -86,5 +87,5 @@
 }
 
 .about__partners {
-  padding: 118px 0 64px;
+  padding: 118px 0 180px;
 }

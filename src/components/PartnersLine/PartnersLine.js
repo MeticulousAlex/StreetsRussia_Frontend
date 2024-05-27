@@ -33,7 +33,7 @@ export default function PartnersLine({title, partners}) {
   return (
     <div className='partners-line'>
       <h4 className='partners-line__title'>{title}</h4>
-      <button className={`partners-line_button partners-line_button_type_left ${isSlider&&'button__active_left'}`} onClick={handleSlideLeft}/>
+      <button className={`partners-line__button partners-line__button_type_left ${isSlider&&'button__active_left'}`} onClick={handleSlideLeft}/>
       <div className={`partners-line__list ${isEndOfList&&'partners-line__end-of-list'}`}>
         {partners.slice(sliderStart, (sliderStart+2)).map((item) => (
           <PartnerLogo 
@@ -42,7 +42,7 @@ export default function PartnersLine({title, partners}) {
           />
         ))}
       </div>
-      <button className={`partners-line_button partners-line_button_type_right ${isSlider&&'button__active_right'}`} onClick={handleSlideRigth}/>
+      <button className={`partners-line__button partners-line__button_type_right ${isSlider&&'button__active_right'}`} onClick={handleSlideRigth}/>
     </div>
   )
 }

@@ -11,6 +11,7 @@ import Calendar from '../Calendar/Calendar';
 import CititesPopup from '../CitiesPopup/CititesPopup';
 import { Route, Routes, useNavigate} from 'react-router-dom';
 import { register, authorize } from '../../utils/MainApi';
+import {EVENTS} from '../events';
 
 function App() {
 
@@ -37,6 +38,9 @@ function App() {
 
   const [city, setCity] = React.useState(localStorage.getItem('currentCity') || '');
   const [isNotificationShown, setIsNotificationShown] = React.useState(true);
+
+
+  const [filteredEvents, setFilteredEvents] = React.useState([]);
 
   // ----------------- FUNCTIONS ---------------------
 
@@ -76,7 +80,11 @@ function App() {
     setIsAuthorizedUser(true);
   }
 
-
+  React.useEffect(() => {
+    setFilteredEvents(() => EVENTS.filter(ev => ev.city === city));
+    console.log(city);
+    console.log(filteredEvents);
+  }, [city])
 
   React.useEffect(()=>{
     navigate('/', {replace: true})
@@ -87,16 +95,10 @@ function App() {
       <Header setIsSupportPopupOpen={setIsSupportPopupOpen} setIsJoinPopupOpen={setIsJoinPopupOpen} city={city} setCity={setCity} isNotificationShown={isNotificationShown} setIsNotificationShown={setIsNotificationShown} setIsCitiesPopupOpen={setIsCitiesPopupOpen}/>
       <Routes>
         <Route path='/' element={<Main isJoinPopupOpen={isJoinPopupOpen} setIsJoinPopupOpen={setIsJoinPopupOpen} isSupportPopupOpen={isSupportPopupOpen} setIsSupportPopupOpen={setIsSupportPopupOpen}/>}/>
-<<<<<<< HEAD
         <Route path='/about' element={<About />}/>
-        <Route path='/activities' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>activities</p>}/>
-        <Route path='/calendar' element={<Calendar city={city} setCity={setCity} isNotificationShown={isNotificationShown} setIsNotificationShown={setIsNotificationShown} setIsCitiesPopupOpen={setIsCitiesPopupOpen}/>}/>
-=======
-        <Route path='/about' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>about</p>}/>
+        <Route path='/calendar' element={<Calendar filteredEvents={filteredEvents} city={city} setCity={setCity} isNotificationShown={isNotificationShown} setIsNotificationShown={setIsNotificationShown} setIsCitiesPopupOpen={setIsCitiesPopupOpen}/>}/>
         <Route path='/disciplines' element={<ActivitiesPage/>}/>
         <Route path='/disciplines/activity' element={<DisciplinePage/>}/>
-        <Route path='/calendar' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>calendar</p>}/>
->>>>>>> main
         <Route path='/news' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>news</p>}/>
         <Route path='/contacts' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>contacts</p>}/>
 

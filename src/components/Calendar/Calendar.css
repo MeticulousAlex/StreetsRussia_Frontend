@@ -1,9 +1,10 @@
 .calendar {
+  position: relative;
   background-image: url('../../images/Calendar_background.png');
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFF;
-  padding: 65px 64px 65px 74px;
+  padding: 65px 64px 280px 74px;
   text-align: left;
 }
 
