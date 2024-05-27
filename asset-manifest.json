@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/StreetsRussia_Frontend/static/css/main.5ec2e7a0.css",
-    "main.js": "/StreetsRussia_Frontend/static/js/main.d3b8f82a.js",
-    "static/js/453.039ccdd4.chunk.js": "/StreetsRussia_Frontend/static/js/453.039ccdd4.chunk.js",
+    "main.css": "/StreetsRussia_Frontend/static/css/main.9def7d90.css",
+    "main.js": "/StreetsRussia_Frontend/static/js/main.9538b387.js",
+    "static/js/453.b3714985.chunk.js": "/StreetsRussia_Frontend/static/js/453.b3714985.chunk.js",
     "static/media/Promo_video.mp4": "/StreetsRussia_Frontend/static/media/Promo_video.f3b09438f64d4572083d.mp4",
+    "static/media/news_2.png": "/StreetsRussia_Frontend/static/media/news_2.00469373935455772f6c.png",
     "static/media/disciplines_grid_2.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_2.a5d005844375c30b06bb.png",
+    "static/media/news_3.png": "/StreetsRussia_Frontend/static/media/news_3.6f5de85d5815c3d5b67c.png",
     "static/media/disciplines_grid_6.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_6.34179a10e434fcf2ca36.png",
     "static/media/disciplines_grid_5.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_5.34d689557589ca7d2f91.png",
+    "static/media/news_4.png": "/StreetsRussia_Frontend/static/media/news_4.117e54782e58ccf00c48.png",
+    "static/media/news_6.png": "/StreetsRussia_Frontend/static/media/news_6.65ddfffe14afd5e7f389.png",
     "static/media/disciplines_grid_3.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_3.30641580e9ae71b47f62.png",
+    "static/media/news_1.png": "/StreetsRussia_Frontend/static/media/news_1.9c5cbd12230ebc45276a.png",
     "static/media/disciplines_grid_1.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_1.f7e3b47692193d55f886.png",
+    "static/media/news_5.png": "/StreetsRussia_Frontend/static/media/news_5.b7a8af43e4a7baa41206.png",
     "static/media/street_art.png": "/StreetsRussia_Frontend/static/media/street_art.9568beab5480f578cb3c.png",
     "static/media/disciplines_grid_4.png": "/StreetsRussia_Frontend/static/media/disciplines_grid_4.2a436a95e3c3b66ecbe1.png",
     "static/media/BAHNSCHRIFT.TTF": "/StreetsRussia_Frontend/static/media/BAHNSCHRIFT.b00e12e37c52124aa504.TTF",
@@ -30,16 +36,18 @@
     "static/media/dropdown_arrow.svg": "/StreetsRussia_Frontend/static/media/dropdown_arrow.ba339b2db3b5157db96ea717cad3e080.svg",
     "static/media/search-icon.svg": "/StreetsRussia_Frontend/static/media/search-icon.ee988e760a7d5ec78410c15e1b46ced2.svg",
     "index.html": "/StreetsRussia_Frontend/index.html",
+    "static/media/news_arrow_right.svg": "/StreetsRussia_Frontend/static/media/news_arrow_right.5347b2049fcae1f47b98946beaeff9d1.svg",
+    "static/media/news_arrow_left.svg": "/StreetsRussia_Frontend/static/media/news_arrow_left.314fe700792733dcf4e43ab8ef5d5259.svg",
     "static/media/ic_arrow_left.svg": "/StreetsRussia_Frontend/static/media/ic_arrow_left.cb0c134c0c91fac720e2b14b6f42d536.svg",
     "static/media/back_arrow.svg": "/StreetsRussia_Frontend/static/media/back_arrow.889efc8c170bf81bab1a189ed1a5686b.svg",
     "static/media/ic_arrow_right.svg": "/StreetsRussia_Frontend/static/media/ic_arrow_right.88dfb92fbbb80b0bc6957b74fcbeedf9.svg",
     "static/media/cancel_is_your_city.svg": "/StreetsRussia_Frontend/static/media/cancel_is_your_city.36eacae1943a2814d5e2.svg",
-    "main.5ec2e7a0.css.map": "/StreetsRussia_Frontend/static/css/main.5ec2e7a0.css.map",
-    "main.d3b8f82a.js.map": "/StreetsRussia_Frontend/static/js/main.d3b8f82a.js.map",
-    "453.039ccdd4.chunk.js.map": "/StreetsRussia_Frontend/static/js/453.039ccdd4.chunk.js.map"
+    "main.9def7d90.css.map": "/StreetsRussia_Frontend/static/css/main.9def7d90.css.map",
+    "main.9538b387.js.map": "/StreetsRussia_Frontend/static/js/main.9538b387.js.map",
+    "453.b3714985.chunk.js.map": "/StreetsRussia_Frontend/static/js/453.b3714985.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ec2e7a0.css",
-    "static/js/main.d3b8f82a.js"
+    "static/css/main.9def7d90.css",
+    "static/js/main.9538b387.js"
   ]
 }
