@@ -42,7 +42,7 @@ export default function DayEventsList({selectedDate, dayEvents}) {
     if (dayEvents.length > 1) {
       setIsSlider(true);
     } else setIsSlider(false)
-  }, [])
+  }, [dayEvents])
 
   return ( 
     <div className='event-items'>
