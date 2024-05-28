@@ -1,9 +1,9 @@
 # Команда №5
 
-#### frontend 
+### Frontend-team 
 
-Смелов Александр\
-Пашкова Анастасия
+* Смелов Александр
+* Пашкова Анастасия
 
 ## Ссылка на проект
 
@@ -60,7 +60,7 @@ https://meticulousalex.github.io/StreetsRussia_Frontend/#/
 
 - react-imask (отрисовка телефонного номера по маске в формах) - https://www.npmjs.com/package/react-imask
 
-- @uidotdev/usehooks (а именно функция useWindowSize() для ресайза карты) - https://www.npmjs.com/package/@uidotdev/usehooks
+- @uidotdev/usehooks (а именно функция `useWindowSize()` для ресайза карты) - https://www.npmjs.com/package/@uidotdev/usehooks
 
 - color-calendar (календарь событий) - https://www.npmjs.com/package/color-calendar
 
