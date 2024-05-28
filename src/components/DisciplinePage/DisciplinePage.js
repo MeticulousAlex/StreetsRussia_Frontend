@@ -14,11 +14,19 @@ import redSprite from '../../images/red_sprite_activities_selector.png';
 import blueSprite from '../../images/sprite_blue_discipline_page.png';
 import { useNavigate  } from 'react-router-dom';
 
-export default function DisciplinePage({discipline}){
+export default function DisciplinePage({setIsJoinPopupOpen}){
     const navigate = useNavigate();
 
     function handleGoBack(){
         navigate('/disciplines', {replace:true});
+    }
+
+    function handleJoinPopup(){
+        setIsJoinPopupOpen(true);
+    }
+
+    function handleMorePhoto(){
+        window.open('https://vk.com/albums-196125031');
     }
 
     return(
@@ -41,9 +49,9 @@ export default function DisciplinePage({discipline}){
                         <li className='photo-grid__item photo-grid__item_medium'><img className='photo-grid__image' src={disciplinesImage5}/></li>
                         <li className='photo-grid__item photo-grid__item_medium'><img className='photo-grid__image' src={disciplinesImage6}/></li>
                     </ul>
-                    <button className='discipline-page__button discipline-page__button_support '>Посмотреть больше фото</button>
+                    <button className='discipline-page__button discipline-page__button_support 'onClick={handleMorePhoto}>Посмотреть больше фото</button>
                     <p className='discipline-page__caption'>Понравилось направление? Нажми на кнопку и получи возможность участвовать в мероприятиях в своём городе и развиваться вместе с нами!</p>
-                    <button type='button' className='discipline-page__button discipline-page__button_join'>Присоединиться</button>
+                    <button type='button' className='discipline-page__button discipline-page__button_join' onClick={handleJoinPopup}>Присоединиться</button>
                     <img className='sprite sprite_discipline-page-red' src={redSprite}></img>
                     <img className='sprite sprite_discipline-page-blue' src={blueSprite}></img>
             </div>

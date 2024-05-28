@@ -8,6 +8,7 @@ import ActivitiesPage from '../ActivitiesPage/ActivitiesPage';
 import DisciplinePage from '../DisciplinePage/DisciplinePage';
 import AuthPage from '../AuthPage/AuthPage';
 import About from '../About/About';
+import Contacts from '../Contacts/Contacts';
 import Calendar from '../Calendar/Calendar';
 import CititesPopup from '../CitiesPopup/CititesPopup';
 import JoinPopup from '../JoinPopup/JoinPopup';
@@ -106,12 +107,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Main setIsJoinPopupOpen={setIsJoinPopupOpen}/>}/>
         <Route path='/disciplines' element={<ActivitiesPage/>}/>
-        <Route path='/disciplines/activity' element={<DisciplinePage/>}/>
+        <Route path='/disciplines/activity' element={<DisciplinePage setIsJoinPopupOpen={setIsJoinPopupOpen}/>}/>
         <Route path='/about' element={<About />}/>
         <Route path='/calendar' element={<Calendar filteredEvents={filteredEvents} city={city} setCity={setCity} isNotificationShown={isNotificationShown} setIsNotificationShown={setIsNotificationShown} setIsCitiesPopupOpen={setIsCitiesPopupOpen}/>}/>
         <Route path='/news' element={<News setCurrentNewsTitle={setCurrentNewsTitle}/>}/>
         <Route path='/news/news-item' element={<NewsItem currentNewsTitle={currentNewsTitle}/>}/>
-        <Route path='/contacts' element={<p style={{color:'black', paddingTop:'300px', margin:'0'}}>contacts</p>}/>
+        <Route path='/contacts' element={<Contacts/>}/>
 
 
 

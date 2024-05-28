@@ -5,7 +5,6 @@ import HistoryCardList from '../HistoryCardList/HistoryCardList';
 import TeamCardList from '../TeamCardList/TeamCardList';
 import Card from '../Card/Card';
 import PartnersLine from '../PartnersLine/PartnersLine';
-import Footer from '../Footer/Footer';
 
 import {fedTeam, 
         regTeam,
@@ -87,7 +86,6 @@ export default function About() {
           partners={regPartners}
         />
       </div>
-      <Footer />
     </section>
   )
 }

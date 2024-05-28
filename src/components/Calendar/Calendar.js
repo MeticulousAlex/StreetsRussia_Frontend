@@ -4,7 +4,6 @@ import Geolocation from '../Geolocation/Geolocation';
 import Filter from '../Filter/Filter';
 import EventCalendar from '../EventCalendar/EventCalendar';
 import DayEventsList from '../DayEventsList/DayEventsList';
-import Footer from '../Footer/Footer';
 
 import noEvent from '../../images/NoEvent.png'; 
 import { discipline } from '../constants';
@@ -20,7 +19,7 @@ export default function Calendar({city, setCity, isNotificationShown, setIsNotif
   const [filteredDayEvents, setFilteredDayEvents] = React.useState([]);
 
   function handleFilter(item) {
-    if (item != 'Выбери направление') {
+    if (item !== 'Выбери направление') {
       setSelectedDiscipline(item);
     } else {
       setSelectedDiscipline('');
@@ -41,7 +40,7 @@ export default function Calendar({city, setCity, isNotificationShown, setIsNotif
 
   function handleShowInfo() {
     let eventsCheck = dayEvents;
-    if (selectedDiscipline != '') {
+    if (selectedDiscipline !== '') {
       setFilteredDayEvents(dayEvents.filter(ev => ev.discipline === selectedDiscipline));
       eventsCheck = dayEvents.filter(ev => ev.discipline === selectedDiscipline);
     } else {
@@ -90,7 +89,6 @@ export default function Calendar({city, setCity, isNotificationShown, setIsNotif
               />}
         </div>
       </div>
-      <Footer />
     </section>
   )
 }
