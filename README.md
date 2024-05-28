@@ -22,6 +22,8 @@ https://meticulousalex.github.io/StreetsRussia_Frontend/#/
 - React
 - JavaScrip
 
+##### Использованы CSS переменные в слайдере дисциплин
+
 ## Библиотеки:
 
 - react-slick (слайдер в новостях) - https://www.npmjs.com/package/react-slick
